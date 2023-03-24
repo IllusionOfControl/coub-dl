@@ -6,13 +6,13 @@ To build Coub-dl from source, you'll need to have Go and go mod installed on you
 
 ```bash
 # Clone the repository
-git clone https://github.com/TeeSeal/coub-dl.git
+git clone https://github.com/IllusionOfControl/coub-dl.git
 
 # Change into the project directory
 cd coub-dl
 
-# Build the binary
-go build ./cmd/coub-dl
+# Build the binary (add output extension .exe for Windows)
+go build -o coub-dl ./cmd/main.go 
 
 # Run the binary with the -url argument
 ./coub-dl -url https://coub.com/view/abc123
